@@ -60,7 +60,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2024-11-13 16:49:48',
+  postUpdate: '2024-11-13 21:19:31',
   postMainColor: '',
 }</script><noscript><style type="text/css">
   #nav {
@@ -338,7 +338,7 @@ queueMicrotask(() => {
 
   const getComment = async () => {
     try {
-      const res = await fetch('https://yizong.sbs.vercel.app/api/comment?type=recent&count=6', { method: 'GET' })
+      const res = await fetch('https://comment.hxm.baby.vercel.app/api/comment?type=recent&count=6', { method: 'GET' })
       const result = await res.json()
       const walineArray = result.data.map(e => {
         return {
